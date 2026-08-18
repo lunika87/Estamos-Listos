@@ -1,0 +1,220 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+
+/* BARRA SUPERIOR */
+
+header {
+    width: 100%;
+    height: 70px;
+
+    background-color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+
+/* PÁGINA PRINCIPAL */
+
+main {
+     min-height: calc(100vh - 70px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* IMAGEN */
+
+.imagen-principal {
+    display: block;
+
+    width: 400px;
+    max-width: 90%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    margin: 20px auto;
+}
+
+
+/* BOTÓN PRINCIPAL */
+
+.boton-principal {
+    padding: 15px 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: red;
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.boton-principal:hover {
+    opacity: 0.8;
+}
+
+
+/* REGISTRO */
+
+.texto-registro {
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.boton-registro {
+    padding: 15px 40px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(44, 64, 245);
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* FORMULARIO */
+
+.registro-oculto {
+    display: none;
+
+    max-width: 500px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+}
+
+.registro-oculto h2 {
+    margin-bottom: 25px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+input {
+    padding: 12px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+/* BOTÓN CREAR */
+
+.boton-crear {
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: red;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* BOTÓN VOLVER */
+
+.boton-volver {
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    background-color: #ddd;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+/* TELÉFONO */
+
+.telefono {
+    display: flex;
+    width: 100%;
+}
+
+.codigo-pais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 15px;
+
+    background-color: #eeeeee;
+
+    border: 1px solid #aaa;
+    border-right: none;
+
+    border-radius: 6px 0 0 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.telefono input {
+    flex: 1;
+
+    border-radius: 0 6px 6px 0;
+}
