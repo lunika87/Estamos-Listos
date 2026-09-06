@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>¿ESTAMOS LISTOS?</title>
+    <title>Mi Sitio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- BARRA SUPERIOR -->
     <header>
-        <h1>¿ESTAMOS LISTOS?</h1>
+        <h1>NOMBRE DEL SITIO</h1>
     </header>
 
 
-    <!-- PÁGINA PRINCIPAL -->
+    <!-- INICIO -->
+
     <main id="inicio">
 
-        <img 
-            src="LIMA.png" 
+        <img
+            src="imagen.jpg"
             alt="Imagen principal"
             class="imagen-principal"
         >
 
-        <button class="boton-principal" onclick="mostrarRegistro()">
-            Solicitar ayuda
+        <button
+            class="boton-principal"
+            onclick="mostrarRegistro()">
+            BOTÓN PRINCIPAL
         </button>
 
-        <p class="texto-registro">
-            ¿Eres voluntario? ¡Registrate!
+        <p>
+            ¿Eres voluntario? ¡Regístrate!
         </p>
 
-        <button class="boton-registro" onclick="mostrarRegistro()">
+        <button
+            class="boton-registro"
+            onclick="mostrarRegistro()">
             Registrarse
         </button>
 
     </main>
 
 
-    <!-- FORMULARIO DE REGISTRO -->
+    <!-- REGISTRO -->
+
     <section id="registro" class="registro-oculto">
 
-    <h2>Registrarse</h2>
+        <h2>Registrarse</h2>
 
-    <form onsubmit="registrarUsuario(event)">
+        <form onsubmit="registrarUsuario(event)">
 
-        <label>Nombre:</label>
-        <input 
-        type="text" 
-        id="nombre"
-        required
-        oninput="this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñÜü ]/g, '')"
-        title="El nombre solo puede contener letras y espacios"
-        >
+            <label for="nombre">
+                Nombre:
+            </label>
 
-        <label>Número:</label>
-
-        <div class="telefono">
-            <span class="codigo-pais">+51</span>
-
-            <input 
-                type="tel" 
-                id="numero"
+            <input
+                type="text"
+                id="nombre"
                 required
+            >
+
+
+            <label for="numero">
+                Número:
+            </label>
+
+            <input
+                type="tel"
+                id="numero"
                 maxlength="9"
                 pattern="[0-9]{9}"
-                inputmode="numeric"
-                title="Ingresa exactamente 9 números"
-                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                placeholder="987654321"
+                required
             >
-        </div>
 
-        <label>Correo:</label>
-        <input 
-            type="email" 
-            id="correo"
-            required
-        >
 
-        <label>Zona de residencia:</label>
-        <input 
-            type="text" 
-            id="zona"
-            required
-        >
+            <label for="correo">
+                Correo:
+            </label>
 
-        <button type="submit" class="boton-crear">
-            CREAR CUENTA
+            <input
+                type="email"
+                id="correo"
+                placeholder="ejemplo@gmail.com"
+                required
+            >
+
+
+            <label for="zona">
+                Zona de residencia:
+            </label>
+
+            <input
+                type="text"
+                id="zona"
+                placeholder="Ej. Mala"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="boton-crear">
+                CREAR CUENTA
+            </button>
+
+        </form>
+
+
+        <button
+            class="boton-volver"
+            onclick="volverInicio()">
+            Volver
         </button>
 
-    </form>
-
-    <button class="boton-volver" onclick="volverInicio()">
-        Volver
-    </button>
-
-</section>
+    </section>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -1,13 +1,14 @@
-/* CONFIGURACIÓN GENERAL */
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background-color: #f5f5f5;
+
     text-align: center;
 }
 
@@ -27,6 +28,7 @@ header {
 
 header h1 {
     color: white;
+
     margin: 0;
 }
 
@@ -34,12 +36,14 @@ header h1 {
 /* PÁGINA PRINCIPAL */
 
 main {
-     min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
+
     align-items: center;
 
     padding: 20px;
@@ -49,28 +53,31 @@ main {
 /* IMAGEN */
 
 .imagen-principal {
-    display: block;
 
     width: 400px;
-    max-width: 90%;
 
-    height: 350px;
+    height: 300px;
 
     object-fit: cover;
 
-    margin: 20px auto;
+    display: block;
+
+    margin: 20px;
 }
 
 
 /* BOTÓN PRINCIPAL */
 
 .boton-principal {
+
     padding: 15px 40px;
 
     border: none;
+
     border-radius: 8px;
 
-    background-color: red;
+    background-color: rgb(255, 0, 149);
+
     color: white;
 
     font-size: 18px;
@@ -86,28 +93,28 @@ main {
 /* REGISTRO */
 
 .texto-registro {
-    margin-top: 35px;
-    margin-bottom: 8px;
+    margin-top: 30px;
 }
 
+
 .boton-registro {
-    padding: 15px 40px;
+
+    background: none;
 
     border: none;
-    border-radius: 5px;
 
-    background-color: rgb(44, 64, 245);
-    color: white;
-
-    font-size: 15px;
+    color: blue;
 
     cursor: pointer;
+
+    font-size: 16px;
 }
 
 
 /* FORMULARIO */
 
 .registro-oculto {
+
     display: none;
 
     max-width: 500px;
@@ -121,13 +128,17 @@ main {
     border-radius: 12px;
 }
 
+
 .registro-oculto h2 {
+
     margin-bottom: 25px;
 }
 
 
 form {
+
     display: flex;
+
     flex-direction: column;
 
     text-align: left;
@@ -135,7 +146,9 @@ form {
 
 
 label {
+
     margin-top: 15px;
+
     margin-bottom: 5px;
 
     font-weight: bold;
@@ -143,6 +156,7 @@ label {
 
 
 input {
+
     padding: 12px;
 
     border: 1px solid #aaa;
@@ -153,17 +167,20 @@ input {
 }
 
 
-/* BOTÓN CREAR */
+/* CREAR CUENTA */
 
 .boton-crear {
+
     margin-top: 25px;
 
     padding: 14px;
 
     border: none;
+
     border-radius: 8px;
 
     background-color: red;
+
     color: white;
 
     font-size: 16px;
@@ -172,9 +189,10 @@ input {
 }
 
 
-/* BOTÓN VOLVER */
+/* VOLVER */
 
 .boton-volver {
+
     margin-top: 15px;
 
     padding: 10px 20px;
@@ -186,35 +204,4 @@ input {
     border-radius: 6px;
 
     cursor: pointer;
-}
-
-/* TELÉFONO */
-
-.telefono {
-    display: flex;
-    width: 100%;
-}
-
-.codigo-pais {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0 15px;
-
-    background-color: #eeeeee;
-
-    border: 1px solid #aaa;
-    border-right: none;
-
-    border-radius: 6px 0 0 6px;
-
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.telefono input {
-    flex: 1;
-
-    border-radius: 0 6px 6px 0;
 }
